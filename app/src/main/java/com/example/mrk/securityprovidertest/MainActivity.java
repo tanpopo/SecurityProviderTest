@@ -19,6 +19,10 @@ import java.security.Security;
 ref:
 https://docs.oracle.com/javase/7/docs/api/javax/crypto/spec/GCMParameterSpec.html
 http://www.techscore.com/tech/Java/JavaSE/JCE/9/#jce9-3
+GCM用AlgorithmParametersの使い方
+https://github.com/wsargent/jce-aes-cipher-poc/blob/master/src/main/java/com/tersesystems/cipher/aes/AESCipherService.java
+AlgorithmParameters.init(byte[])は、おそらくAlgParamsGCM.engineInit(byte[] params)につながる
+http://tools.oesf.biz/android-6.0.0_r1.0/xref/external/bouncycastle/bcprov/src/main/java/org/bouncycastle/jcajce/provider/symmetric/AES.java#397
  */
 public class MainActivity extends AppCompatActivity {
     private static String tag = "MainActivity";
