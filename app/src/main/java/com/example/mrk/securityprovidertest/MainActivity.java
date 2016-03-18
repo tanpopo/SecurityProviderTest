@@ -84,6 +84,6 @@ public class MainActivity extends AppCompatActivity {
         TextView outputView = (TextView) findViewById(R.id.outputView);
         outputView.setText(outText);
 
-
+        Log.d(tag, "hogehoge");
     }
 }
